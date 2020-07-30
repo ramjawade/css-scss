@@ -1,0 +1,58 @@
+@import "./abstract/variable";
+@import "./animations/keyframe";
+@import "./layout/heading";
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato" sans-serif;
+  line-height: 1.7;
+  padding: 1rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.4rem;
+  border-radius: 10rem;
+  padding: 0rem 2.5rem;
+  /* animation: all 0.2s; */
+  transition: all 0.1s;
+}
+.btn-white {
+  background-color: $white;
+  color: #777;
+}
+/* x ,y, bluer color */
+.btn:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1rem 2rem rgb(0, 0, 0);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0);
+}
+
+/* .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  } */
