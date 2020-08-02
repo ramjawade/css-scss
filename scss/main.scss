@@ -1,6 +1,9 @@
 @import "./abstract/variable";
+@import "./abstract/mixin";
 @import "./animations/keyframe";
 @import "./layout/heading";
+@import "./layout/grid";
+
 * {
   margin: 0rem;
   padding: 0rem;
