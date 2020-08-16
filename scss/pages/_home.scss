@@ -1,0 +1,21 @@
+.section-about {
+  background-color: $gray-light;
+  padding: 15rem 0;
+  margin-top: -25vh;
+}
+
+.section-feature {
+  padding: 15rem 0;
+  margin-top: -10rem;
+  background-image: linear-gradient(
+      to right bottom,
+      $primary-light,
+      $primary-dark
+    ),
+    url("./../DSC_4998-1.JPG");
+  background-size: cover;
+  transform: skewY(3deg);
+  & > * {
+    transform: skewY(-3deg);
+  }
+}

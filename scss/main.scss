@@ -1,8 +1,17 @@
 @import "./abstract/variable";
 @import "./abstract/mixin";
+@import "./icomoon-v1.0/style.scss";
 @import "./animations/keyframe";
+@import "./typography/typography";
+@import "./abstract/utility";
+
+@import "./components/button";
+@import "./components/composition";
+@import "./components/feature-box";
+
 @import "./layout/heading";
 @import "./layout/grid";
+@import "./pages/home";
 
 * {
   margin: 0rem;
@@ -20,42 +29,3 @@ body {
   line-height: 1.7;
   padding: 1rem;
 }
-
-.btn:link,
-.btn:visited {
-  text-transform: capitalize;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 2.4rem;
-  border-radius: 10rem;
-  padding: 0rem 2.5rem;
-  /* animation: all 0.2s; */
-  transition: all 0.1s;
-}
-.btn-white {
-  background-color: $white;
-  color: #777;
-}
-/* x ,y, bluer color */
-.btn:hover {
-  transform: translateY(-1rem);
-  box-shadow: 0 1rem 2rem rgb(0, 0, 0);
-}
-
-.btn:active {
-  transform: translateY(0);
-  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0);
-}
-
-/* .btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-  } */

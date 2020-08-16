@@ -1,17 +1,13 @@
 .row {
   max-width: $row-width;
-  margin: 0 auto;
-  background-color: #eee;
+  margin: 0 auto; // make it to center from both side
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
-
   @include clearfix;
 
   [class^="col-"] {
-    height: 5rem;
     float: left;
-    background-color: orange;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
     }
