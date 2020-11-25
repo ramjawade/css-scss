@@ -1,8 +1,12 @@
 .header {
   height: 75vh;
   width: 100%;
-  background-image: linear-gradient(to right bottom, $primary-light, #ffffff00),
-    url("./../DSC_4998-1.JPG");
+  background-image: linear-gradient(
+    to right bottom,
+    $primary-dark,
+    $primary-light
+  );
+  // url("./../DSC_4998-1.JPG");
   background-size: cover;
   background-position: right;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
@@ -36,6 +40,12 @@
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 0.8rem;
+    animation: moveToRight 1s ease-out;
+    animation-name: moveToRight;
+    animation-duration: 1s;
+  }
+  &-info {
+    letter-spacing: 0.3rem;
     animation: moveToRight 1s ease-out;
     animation-name: moveToRight;
     animation-duration: 1s;

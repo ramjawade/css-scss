@@ -922,6 +922,12 @@ i {
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
 
+.u-rich-text {
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 1rem;
+  text-transform: capitalize; }
+
 .btn:link,
 .btn:visited {
   text-transform: capitalize;
@@ -1000,8 +1006,8 @@ i {
   transition: all 0.2s;
   box-shadow: 0 0.5 2rem rgba(0, 0, 0, 0.4); }
   .feature-box__icon {
-    font-size: 6rem;
-    margin-bottom: 0.5rem;
+    font-size: 12rem;
+    margin-bottom: 2rem;
     background-image: linear-gradient(to right, #19fd0073, #19fd00);
     display: inline-block;
     -webkit-background-clip: text;
@@ -1071,7 +1077,7 @@ i {
 .header {
   height: 75vh;
   width: 100%;
-  background-image: linear-gradient(to right bottom, #19fd0073, #ffffff00), url("./../DSC_4998-1.JPG");
+  background-image: linear-gradient(to right bottom, #19fd00, #19fd0073);
   background-size: cover;
   background-position: right;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
@@ -1101,6 +1107,11 @@ i {
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 0.8rem;
+    animation: moveToRight 1s ease-out;
+    animation-name: moveToRight;
+    animation-duration: 1s; }
+  .heading-info {
+    letter-spacing: 0.3rem;
     animation: moveToRight 1s ease-out;
     animation-name: moveToRight;
     animation-duration: 1s; }

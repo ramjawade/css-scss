@@ -7,8 +7,8 @@
   transition: all 0.2s;
   box-shadow: 0 0.5 2rem rgba($color: $black, $alpha: 0.4);
   &__icon {
-    font-size: 6rem;
-    margin-bottom: 0.5rem;
+    font-size: 12rem;
+    margin-bottom: 2rem;
     background-image: linear-gradient(to right, $primary-light, $primary-dark);
     display: inline-block;
     -webkit-background-clip: text;
