@@ -1,4 +1,18 @@
 @charset "UTF-8";
+/**
+Desktop first approach 
+0 - 600     -phone
+600 - 900   -tab-pro
+900 - 1200  -tab-land
+1200 - 1800 - Normal css will apply
+1800 +      - big screen 
+
+$breakpoints
+- phone
+- tab-pro
+- tab-land
+- big-s
+*/
 @font-face {
   font-family: "icomoon";
   src: url("./../scss/icomoon-v1.0/fonts/icomoon.eot?2df7yl");
@@ -1158,8 +1172,20 @@ i {
   box-sizing: inherit; }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
   box-sizing: border-box; }
+  @media (max-width: 1200) {
+    html {
+      font-size: 80%; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 70%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 1800) {
+    html {
+      font-size: 90%; } }
 
 body {
   font-family: "Lato" sans-serif;

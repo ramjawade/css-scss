@@ -21,8 +21,24 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
   box-sizing: border-box;
+
+  @include respond(tab-land) {
+    font-size: 80%;
+  }
+
+  @include respond(tab-pro) {
+    font-size: 70%;
+  }
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
+
+  @include respond(big-s) {
+    font-size: 90%;
+  }
 }
 
 body {

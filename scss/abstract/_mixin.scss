@@ -5,3 +5,44 @@
     clear: both; // Do not allow floating elements on the left or the right side of a specified <> element:
   }
 }
+
+/**
+Desktop first approach 
+0 - 600     -phone
+600 - 900   -tab-pro
+900 - 1200  -tab-land
+1200 - 1800 - Normal css will apply
+1800 +      - big screen 
+
+$breakpoints
+- phone
+- tab-pro
+- tab-land
+- big-s
+*/
+
+@mixin respond($breakpoints) {
+  @if $breakpoints == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoints == tab-pro {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+
+  @if $breakpoints == tab-land {
+    @media (max-width: 1200) {
+      @content;
+    }
+  }
+
+  @if $breakpoints == big-s {
+    @media (min-width: 1800) {
+      @content;
+    }
+  }
+}
