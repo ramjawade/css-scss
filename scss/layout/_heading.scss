@@ -6,6 +6,10 @@
   background-size: cover;
   background-position: right;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  }
 }
 
 .heading {

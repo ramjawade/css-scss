@@ -12,6 +12,13 @@
     transform: skewY(2deg) skewX(18deg) scale(1.1);
     text-shadow: 0.5rem 1rem 1rem rgba($black, 0.2);
   }
+
+  @include respond(tab-pro) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }
 
 .heading-tertiary {

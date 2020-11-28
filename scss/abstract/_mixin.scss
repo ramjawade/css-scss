@@ -19,29 +19,36 @@ $breakpoints
 - tab-pro
 - tab-land
 - big-s
+
+
+ORDER
+base -> typography -> general-layout -> grid -> page-layout -> component
+
 */
 
 @mixin respond($breakpoints) {
   @if $breakpoints == phone {
-    @media (max-width: 600px) {
+    @media (max-width: 37.5em) {
+      // 600/16 media query should be always in em
       @content;
     }
   }
 
   @if $breakpoints == tab-pro {
-    @media (max-width: 900px) {
+    @media (max-width: 56.25em) {
+      //900/16
       @content;
     }
   }
 
   @if $breakpoints == tab-land {
-    @media (max-width: 1200) {
+    @media (max-width: 75em) {
       @content;
     }
   }
 
   @if $breakpoints == big-s {
-    @media (min-width: 1800) {
+    @media (min-width: 112.5em) {
       @content;
     }
   }

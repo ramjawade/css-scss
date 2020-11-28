@@ -12,6 +12,11 @@ $breakpoints
 - tab-pro
 - tab-land
 - big-s
+
+
+ORDER
+base -> typography -> general-layout -> grid -> page-layout -> component
+
 */
 @font-face {
   font-family: "icomoon";
@@ -913,6 +918,12 @@ i {
   .secondary-heading:hover {
     transform: skewY(2deg) skewX(18deg) scale(1.1);
     text-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 56.25em) {
+    .secondary-heading {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .secondary-heading {
+      font-size: 2.5rem; } }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -1089,6 +1100,9 @@ i {
   background-size: cover;
   background-position: right;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
+  @media (max-width: 37.5em) {
+    .header {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); } }
 
 .heading {
   color: #fff;
@@ -1124,14 +1138,30 @@ i {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
   .row::after {
     content: "";
     display: table;
     clear: both; }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+    @media (max-width: 37.5em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -1174,16 +1204,16 @@ i {
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
-  @media (max-width: 1200) {
+  @media (max-width: 75em) {
     html {
       font-size: 80%; } }
-  @media (max-width: 900px) {
+  @media (max-width: 56.25em) {
     html {
       font-size: 70%; } }
-  @media (max-width: 600px) {
+  @media (max-width: 37.5em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 1800) {
+  @media (min-width: 112.5em) {
     html {
       font-size: 90%; } }
 
@@ -1191,3 +1221,6 @@ body {
   font-family: "Lato" sans-serif;
   line-height: 1.7;
   padding: 1rem; }
+  @media (max-width: 37.5em) {
+    body {
+      padding: 0rem; } }
