@@ -4,7 +4,7 @@
   "description": "learning scss",
   "main": "index.js",
   "scripts": {
-    "cmpl:css": "node-sass scss/main.scss -o css -w"
+    "cmpl:css": "node-sass scss/main.scss -o doc/css -w"
   },
   "repository": {
     "type": "git",
